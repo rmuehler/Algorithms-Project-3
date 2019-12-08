@@ -1,8 +1,8 @@
 CXX = g++
 CXXFLAGS = -std=c++14 -Wall -g -I$(BOOST_HOME)
 
-main: maze.o
-	$(CXX) $(CXXFLAGS) -o main maze.o
+maze: maze.o
+	$(CXX) $(CXXFLAGS) -o maze maze.o
 
 clean:
 	rm	main
